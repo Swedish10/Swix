@@ -19,6 +19,8 @@
       lua
       stylua
       lua-language-server
+      odin
+      ols
     ];
   };
 }

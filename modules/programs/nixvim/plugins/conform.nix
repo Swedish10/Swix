@@ -7,6 +7,15 @@
           formatters_by_ft = {
             lua = [ "stylua" ];
             nix = [ "alejandra" ];
+            odin = [ "olsfmt" ];
+          };
+          formatters = {
+            odinfmt = {
+              command = [ "odinfmt" ];
+            };
+            nixfmt = {
+              command = [ "nixfmt" ];
+            };
           };
           formatter_on_save = 
             ''

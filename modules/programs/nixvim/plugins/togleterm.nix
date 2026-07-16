@@ -19,7 +19,7 @@
         {
           mode = "n";
           key = "<leader>t";
-          action = ":ToggleTerm";
+          action = ":ToggleTerm<CR>";
         }
       ];
     };

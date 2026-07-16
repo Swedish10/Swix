@@ -29,7 +29,7 @@
         softtabstop = 2;
         expandtab = true;
         smartindent = true;
-        autoindent = true;
+        autoindent = false;
 
         ignorecase = true;
         smartcase = true;

@@ -10,6 +10,8 @@
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 
     nixvim.url = "github:nix-community/nixvim";
+
+    disko.url = "github:nix-community/disko/latest";
   };
 
   # Import all .nix files from current directory except flake.nix recurively

@@ -1,9 +1,15 @@
 { self, inputs, ... }: {
   flake.nixosModules.nixvim = { pkgs, self, ... }: {
     programs.nixvim = {
-      plugins.lexima = {
+      plugins.mini-pairs = {
         enable = true;
-        package = [ pkgs.vimPlugins.lexima-vim ];
+        settings = {
+          modes = {
+            command = false;
+            insert = true;
+            terminal = false;
+          };
+        };
       };
     };
   };

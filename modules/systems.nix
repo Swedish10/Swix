@@ -10,4 +10,6 @@
     "aarch64-linux"
     "aarch64-darwin"
   ];
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }

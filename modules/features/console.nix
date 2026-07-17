@@ -1,7 +1,8 @@
 { self, inputs, ... }: {
   flake.nixosModules.console = { pkgs, config, ... }: {
+    services.kmscon.enable = true;
+
     services.kmscon = {
-      enable = true;
       hwRender = true;
       fonts = [
         {
@@ -11,7 +12,7 @@
       ];
     };
 
-    environment.systemPackages = with pkgs [
+    environment.systemPackages = with pkgs; [
       terminus_font
       unifont
       pango

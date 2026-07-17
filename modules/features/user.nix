@@ -1,8 +1,12 @@
 { inputs, self, ... }: {
-  flake.nixosModules.user = { pkgs, lib, config, ... }: {
-    users.users.swedish = {
+  flake.nixosModules.user = { pkgs, lib, config, ... }:
+  let
+    username = "swedish";
+  in
+  {
+    users.users.${username} = {
         enable = true;
-        description = "swedish";
+        description = ${username};
         isNormalUser = true;
         shell = pkgs.bashInteractive;
         extraGroups = [
@@ -11,6 +15,6 @@
         ];
       };
 
-    nix.settings.allowed-users = [ "swedish" ];
+    nix.settings.allowed-users = [ ${username} ];
   };
 }

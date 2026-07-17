@@ -6,7 +6,7 @@
   {
     users.users.${username} = {
         enable = true;
-        description = ${username};
+        description = "${username}";
         isNormalUser = true;
         shell = pkgs.bashInteractive;
         extraGroups = [
@@ -15,6 +15,6 @@
         ];
       };
 
-    nix.settings.allowed-users = [ ${username} ];
+    nix.settings.allowed-users = [ "${username}" ];
   };
 }

@@ -9,6 +9,9 @@
       self.nixosModules.console
       self.nixosModules.fonts
       self.nixosModules.macminiWireless
+      ({ config, pkgs, ... }: {
+        netorking.hostname = "merry";
+      })
     ];
   };
 }

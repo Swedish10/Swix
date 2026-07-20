@@ -19,17 +19,6 @@
               ░  ░  ░    ░   ░     ░    ░ ░  ░  ▒ ░░  ░  ░   ░  ░░ ░
                     ░      ░       ░  ░   ░     ░        ░   ░  ░  ░
             '';
-            autoopen = true;
-            content_hooks = [
-              "require(\"mini.starter\").gen_hook.aligning('center', 'center')"
-            ];
-            items = [
-              "{ name = \"Browse Current Working Directory\", action = \"oil\", section = \"Quick Options\" };"
-              "{ name = \"Config\", action = \"cd ~/Appdata/Local/nvim/ | Oil\", section = \"Quick Options\" }"
-              "{ name = \"Find Files\", action = function() require(\"fff\").find_files() end, section = \"Quick Options\" }"
-              "{ name = \"Grep\", action = function() require(\"fff\").live_grep() end, section = \"Quick Options\" }"
-              "require(\"mini.starter\").sections.recent_files(5, false)"
-            ];
           };
         };
       };

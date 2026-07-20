@@ -4,6 +4,13 @@
       plugins.lazygit = {
         enable = true;
       };
+      keymaps = [
+        {
+          action = ":LazyGit<CR>";
+          key = "<leader>lg";
+          mode = "n";
+        }
+      ];
     };
   };
 }

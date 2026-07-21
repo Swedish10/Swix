@@ -7,6 +7,7 @@
       self.nixosModules.corePrograms
       self.nixosModules.nh
       self.nixosModules.nixvim
+      self.nixosModules.bash
     ];
   };
 }

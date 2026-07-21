@@ -1,6 +1,7 @@
 { self, inputs, ... }: {
   flake.nixosConfigurations.merry = inputs.nixpkgs.lib.nixosSystem {
     modules = [
+      self.nixosModules.armadaDisko
       self.nixosModules.armadaBase
       self.nixosModules.user
       self.nixosModules.corePrograms
